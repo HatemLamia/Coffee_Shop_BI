@@ -69,7 +69,7 @@ python etl_cafe.py
 
 4. **DimMeteo**
 
-5 **FaitVentes**
+5. **FaitVentes**
 
 ---
 Auteur
