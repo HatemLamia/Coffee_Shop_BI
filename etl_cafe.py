@@ -82,7 +82,7 @@ dim_magasin_final.to_csv(output_path / "Dimension_Magasin.csv", index=False, sep
 dim_meteo_final.to_csv(output_path / "Dimension_Meteo.csv", index=False, sep=sep)
 fait_ventes_final.to_csv(output_path / "Fait_Ventes.csv", index=False, sep=sep)
 
-print("✅ Données exportées dans le dossier : data/output/")
+print("Données exportées dans le dossier : data/output/")
 
 # ===============================
 # EXPORT VERS BASE DE DONNÉES POSTGRESQL
@@ -102,4 +102,4 @@ dim_magasin_final.to_sql("dim_magasin", engine, if_exists="replace", index=False
 dim_meteo_final.to_sql("dim_meteo", engine, if_exists="replace", index=False)
 fait_ventes_final.to_sql("fait_ventes", engine, if_exists="replace", index=False)
 
-print("✅ Données insérées dans la base PostgreSQL.")
+print("Données insérées dans la base PostgreSQL.")
