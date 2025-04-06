@@ -7,7 +7,7 @@ Objectif : créer un entrepôt de données (DW) et des rapports dans Power BI à
 ---
 
 ## Structure du projet
-
+```bash
 BI-COFFEE-SHOP/
 │
 ├── data/
@@ -26,7 +26,7 @@ BI-COFFEE-SHOP/
 ├── image.png                         # Schéma en étoile du modèle de données
 ├── README.md                         # Présentation du projet
 └── requirements.txt                  # Dépendances Python
-
+```
 
 ---
 
