@@ -8,22 +8,25 @@ Objectif : créer un entrepôt de données (DW) et des rapports dans Power BI à
 
 ## Structure du projet
 
-BI-coffee-shop/                 
+BI-COFFEE-SHOP/
 │
 ├── data/
-│   ├── input/                        # Données sources (raw)
+│   ├── input/                        # Données sources (Excel)
 │   │   ├── Coffee Shop Sales.xlsx
 │   │   └── dataset_temperatures.xlsx
-│   │          
 │   │
-│   └── output/                       # Données transformées
-│       └── Dimensions.xlsx
-        └── fait.xlsx
-│                         
-├── etl_cafe.py                        # Script principal ETL modulaire
-└── requirements.txt                   # Dépendances Python
-└── README.md                          # Présentation rapide du projet
-    
+│   └── output/                       # Données transformées (CSV)
+│       ├── Dimension_Date.csv
+│       ├── Dimension_Magasin.csv
+│       ├── Dimension_Meteo.csv
+│       ├── Dimension_Produit.csv
+│       └── Fait_Ventes.csv
+│
+├── etl_cafe.py                       # Script principal ETL
+├── image.png                         # Schéma en étoile du modèle de données
+├── README.md                         # Présentation du projet
+└── requirements.txt                  # Dépendances Python
+
 
 ---
 
@@ -51,7 +54,9 @@ Assurez-vous d'avoir toutes les dépendances installées, puis lancez le script 
 
 ```bash
 pip install -r requirements.txt
-python etl_cafe.py
+python etl_cafe.py 
+```
+
 ---
 
 ## Modèle en étoile composé de :
@@ -65,8 +70,6 @@ python etl_cafe.py
 4. **DimMeteo**
 
 5 **FaitVentes**
-
-![Schéma en étoile](image.png)
 
 ---
 Auteur
